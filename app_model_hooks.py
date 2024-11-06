@@ -102,7 +102,7 @@ def webhook():
                 os.chdir(path_repo)
             except FileNotFoundError:
                 return jsonify(
-                    {"message": "El directorio del repositorio no existe"}
+                    {"message": "El directorio del repositorio no existe" + path_repo}
                 ), 404
 
             # Realiza un git pull en el repositorio
