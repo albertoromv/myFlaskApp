@@ -84,7 +84,7 @@ def retrain():  # Rutarlo al endpoint '/api/v1/retrain/', metodo GET
 def webhook():
     # Ruta al repositorio donde se realizará el pull
     # path_repo = "/ruta/a/tu/repositorio/en/PythonAnywhere"
-    path_repo = "/home/prueba83/myFlaskApp"
+    path_repo = "/home/prueba83/"
     # servidor_web = "/ruta/al/fichero/WSGI/de/configuracion"
     servidor_web = "/var/www/prueba83_pythonanywhere_com_wsgi.py"
 
@@ -102,7 +102,7 @@ def webhook():
                 os.chdir(path_repo)
             except FileNotFoundError:
                 return jsonify(
-                    {"message": "El directorio del repositorio no existe" + path_repo}
+                    {"message": "El directorio del repositorio no existE" + path_repo}
                 ), 404
 
             # Realiza un git pull en el repositorio
