@@ -77,7 +77,7 @@ def retrain():  # Rutarlo al endpoint '/api/v1/retrain/', metodo GET
         return "<h2>New data for retrain NOT FOUND. Nothing done!</h2>"
 
 
-# aquíííí falta probar el webhook!!
+# aquíííí falta probar el webhook!! !
 
 
 @app.route("/webhook", methods=["POST"])
