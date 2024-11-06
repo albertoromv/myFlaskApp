@@ -77,7 +77,7 @@ def retrain():  # Rutarlo al endpoint '/api/v1/retrain/', metodo GET
         return "<h2>New data for retrain NOT FOUND. Nothing done!</h2>"
 
 
-# aquíííí falta probar el webhook!! !
+# cambiado 123 321 !
 
 
 @app.route("/webhook", methods=["POST"])
@@ -102,10 +102,7 @@ def webhook():
                 os.chdir(path_repo)
             except FileNotFoundError:
                 return jsonify(
-                    {
-                        "message": "El directorio del repositorio no existe",
-                        "capasa": path_repo,
-                    }
+                    {"message": "El directorio del repositorio no existe"}
                 ), 404
 
             # Realiza un git pull en el repositorio
