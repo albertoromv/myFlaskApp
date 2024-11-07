@@ -117,7 +117,7 @@ def webhook():
             except subprocess.CalledProcessError:
                 return jsonify(
                     {
-                        "message": f"Error al realizar git pull en el repositorio {repo_name}"
+                        "message": f"Error al realizar git pull en el repositorio {repo_name} con clone_url {clone_url} y servidor web {servidor_web}"
                     }
                 ), 500
         else:
