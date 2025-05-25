@@ -19,7 +19,7 @@ app.config["DEBUG"] = True
 # Enruta la landing page (endpoint /)
 @app.route("/", methods=["GET"])
 def hello():
-    return "Bienvenido a mi API del modelo advertising"
+    return "Bienvenido a mi API del modelo advertising :-)))))))))) "
 
 
 # Enruta la funcion al endpoint /api/v1/predict
@@ -84,7 +84,7 @@ def retrain():  # Rutarlo al endpoint '/api/v1/retrain/', metodo GET
 def webhook():
     # Ruta al repositorio donde se realizará el pull
     # path_repo = "/ruta/a/tu/repositorio/en/PythonAnywhere"
-    path_repo = "/home/prueba83/myFlaskApp"
+    path_repo = "/home/prueba83/arv-github/myFlaskApp"
     # servidor_web = "/ruta/al/fichero/WSGI/de/configuracion"
     servidor_web = "/var/www/prueba83_pythonanywhere_com_wsgi.py"
 
